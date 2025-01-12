@@ -1,0 +1,83 @@
+body{
+  background-color: black;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.icon-enlarged {
+  transform: scale(1.5); /* Enlarges the icon */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper h1{
+  color: white;
+  font-size: 100px;
+}
+
+.timeline {
+  height: 300px;
+  width: 5px;
+  background-color: #e5e5e5;
+}
+
+.stub1 {
+  line-height: 300px;
+  font-size: 24px;
+  background-color: #eae4e4;
+}
+
+.stub2 {
+  height: 1000px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
+  background-color: #f5f4f4;
+  padding: 2px;
+}
+
+.circleWrapper {
+  position: relative;
+}
+.message-right,
+.message-left {
+  position: absolute;
+  top: 20%;
+  width: 350px;
+}
+
+.message-right {
+  left: 60px;
+}
+
+.message-left {
+  right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .message-right,
+  .message-left {
+    position: static; /* Reset absolute positioning for centering */
+    margin: 0 auto;   /* Center horizontally */
+    width: 90%;       /* Adjust width for smaller screens */
+  }
+  .container {
+    display: flex;
+    justify-content: center; /* Center the messages container */
+    flex-direction: column;  /* Stack messages vertically */
+    align-items: center;
+  }
+}
+

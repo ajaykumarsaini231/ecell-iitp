@@ -1,0 +1,7 @@
+.container{
+    display: flex
+    ;
+        z-index: 1;
+        position: relative;
+        justify-content: center;
+}

@@ -1,5 +1,6 @@
 {
   "name": "startin",
+  "homepage": "https://ajaykumarsaini231.github.io/ecell-iitp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,11 +8,18 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "build": "^0.1.4",
     "confetti": "^2.0.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
@@ -22,15 +30,9 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
     "react-intersection-observer": "^9.14.1",
-    "react-timeline-animation": "^1.2.3",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "bootstrap": "^5.3.3",
-    "build": "^0.1.4",
     "react-router-dom": "^7.1.1",
+    "react-timeline-animation": "^1.2.3",
     "reactstrap": "^9.2.3"
-    
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -41,6 +43,7 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "vite": "^6.0.5"
   }
